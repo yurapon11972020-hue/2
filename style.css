@@ -30,13 +30,15 @@ body {
 }
 
 .photo {
-    width: 150px;
-    height: 150px;
-    /* Квадратная форма со скруглёнными углами */
-    border-radius: 20px;
-    object-fit: cover;
+    width: 200px;           /* Фиксированная ширина */
+    height: auto;           /* Высота подстроится под пропорции */
+    border-radius: 10px;    /* Небольшое скругление углов */
+    object-fit: cover;      /* Если нужно обрезать края, но сохранить пропорции */
     border: 4px solid #667eea;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -100,5 +102,9 @@ h1 {
     
     .link {
         font-size: 16px;
+    }
+
+    .photo {
+        width: 150px;       /* На маленьких экранах можно уменьшить */
     }
 }
