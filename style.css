@@ -32,7 +32,8 @@ body {
 .photo {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    /* Квадратная форма со скруглёнными углами */
+    border-radius: 20px;
     object-fit: cover;
     border: 4px solid #667eea;
     margin-bottom: 20px;
@@ -88,7 +89,6 @@ h1 {
     font-size: 22px;
 }
 
-/* Адаптация для маленьких экранов */
 @media (max-width: 480px) {
     .card {
         padding: 30px 20px;
